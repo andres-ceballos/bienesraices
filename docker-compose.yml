@@ -1,0 +1,43 @@
+version: '3.8'
+
+networks: 
+  net:
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment: 
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: bienesraices
+    ports:
+      - 33060:3306
+    volumes: 
+      - ./database:/var/lib/mysql
+    networks: 
+      - net
+
+  phpmyadmin:
+    image: phpmyadmin:5.0
+    container_name: phpmyadmin
+    restart: always
+    environment: 
+      PMA_HOST: mysql
+    ports: 
+      - 8080:80 
+    depends_on: 
+      - mysql
+    networks: 
+      - net
+
+  php:
+    build: .
+    container_name: php
+    volumes: 
+      - ./src:/var/www/html
+    ports:
+      - 8000:80
+    networks: 
+      - net
