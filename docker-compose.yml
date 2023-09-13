@@ -1,0 +1,46 @@
+version: '3.9'
+
+networks:
+  br_net:
+    driver: bridge
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: unless-stopped
+    environment: 
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: bienesraices
+    ports: 
+      - 3306:3306
+    volumes: 
+      - ./mysql:/var/lib/mysql
+    networks: 
+      - br_net
+
+  phpmyadmin:
+    image: phpmyadmin:5.0
+    container_name: phpmyadmin
+    restart: unless-stopped
+    environment: 
+      PMA_HOST: mysql
+    ports: 
+      - 8080:80
+    depends_on: 
+      - mysql
+    networks: 
+      - br_net
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php
+    volumes: 
+      - ./src:/var/www/html
+    ports:
+      - 8000:80
+    networks: 
+      - br_net
