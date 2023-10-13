@@ -40,6 +40,8 @@ services:
     container_name: php
     volumes: 
       - ./src:/var/www/html
+    environment:
+      - ALLOW_OVERRIDE=true
     ports:
       - 8000:80
     networks: 

@@ -223,7 +223,7 @@ class House
     public function getHousesMain()
     {
         try {
-            $sql = "SELECT * FROM houses ORDER BY id_house ASC LIMIT 3";
+            $sql = "SELECT * FROM houses ORDER BY id_house DESC LIMIT 3";
             $result = $this->db->query($sql);
             $this->db = null;
         } catch (Exception $e) {
@@ -231,5 +231,39 @@ class House
         }
 
         return $result;
+    }
+
+    public function getHouses()
+    {
+        try {
+            $sql = "SELECT * FROM houses ORDER BY id_house DESC";
+            $result = $this->db->query($sql);
+            $this->db = null;
+        } catch (Exception $e) {
+            echo 'Error ' . $e->getMessage();
+        }
+
+        return $result;
+    }
+
+    public function getDetailHouse()
+    {
+
+        // if (!$this->db) {
+        //     die('ERR -> No hay conexión con la BD');
+        // }
+
+        try {
+            $sql = "SELECT * FROM houses WHERE id_house = $this->id";
+            $result = $this->db->query($sql);
+            $result_query = $result->fetch();
+
+
+            $this->db = null;
+        } catch (Exception $e) {
+            echo 'Error ' . $e->getMessage();
+        }
+
+        return $result_query;
     }
 }

@@ -1,6 +1,6 @@
 <nav id="navigation" class="navigation">
-    <a href="#">Nosotros</a>
-    <a href="#">Anuncios</a>
-    <a href="#">Blog</a>
-    <a href="#">Contacto</a>
+    <a href="nosotros/">Nosotros</a>
+    <a href="anuncios/">Anuncios</a>
+    <a href="blog/">Blog</a>
+    <a href="contact/">Contacto</a>
 </nav>

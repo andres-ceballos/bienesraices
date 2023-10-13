@@ -350,3 +350,42 @@ h4 {
     margin: 0;
     color: #ffffff;
 }
+
+/* US PAGE */
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.us-text blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+/* detail ad */
+.ad-img-background {
+    background-color: #f5f5f5;
+
+}
+
+.ad-img-background div {
+    height: 100vh;
+}
+
+.ad-img {
+    height: 100%;
+}
+
+.ad-resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

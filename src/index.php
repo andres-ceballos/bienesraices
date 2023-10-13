@@ -1,7 +1,10 @@
+<?php ob_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compatibility view -->
@@ -17,7 +20,14 @@
 <body>
     <?php
     require_once('controller/c_main.php');
+
+    // echo "<pre>";
+    // var_dump();
+    // echo "<pre>";
     ?>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="public/js/ajax.js"></script>
 </body>
 
 </html>

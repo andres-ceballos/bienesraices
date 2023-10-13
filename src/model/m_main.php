@@ -1,5 +1,4 @@
 <?php
-
 require_once('db/db_connection.php');
 require_once('model/m_house.php');
 require_once('model/m_blog.php');
