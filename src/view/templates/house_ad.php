@@ -14,7 +14,7 @@
                         <?php echo $house['description_house']; ?>
                     </p>
                     <p class="price">$
-                        <?php echo $house['price_house']; ?>
+                        <?php echo formatMoneyNumber($house['price_house']); ?>
                     </p>
                     <ul class="characteristics-icon">
                         <li>

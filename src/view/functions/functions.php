@@ -29,3 +29,10 @@ function friendlyURL($view)
 
     return $controller_file;
 }
+
+//FORMAT PRICE NUMBER IN ADS MAIN, ADS PAGE AND DETAIL AD PAGE
+function formatMoneyNumber($money){
+    $format_money = number_format($money, 0, ',', '.');
+
+    return $format_money;
+}
