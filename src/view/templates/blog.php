@@ -7,7 +7,7 @@
                 <img src="public/img/<?php echo $blog['url_img_blog']; ?>" alt="Entrada de Blog">
             </div>
             <div class="text-post">
-                <a href="#">
+                <a href="blog/detalle/<?php echo $blog['id_blog']; ?>">
                     <h4><?php echo $blog['title_blog']; ?></h4>
                 </a>
                 <p>Escrito el: <span><?php echo dateFormat($blog['created_at']); ?></span> por: <span><?php echo $blog['name_user']; ?></span> </p>

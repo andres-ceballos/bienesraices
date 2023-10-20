@@ -189,4 +189,28 @@ class Blog
 
         return $result;
     }
+
+    public function getDetailBlog()
+    {
+
+        // if (!$this->db) {
+        //     die('ERR -> No hay conexión con la BD');
+        // }
+
+        try {
+            $sql = "SELECT id_blog, title_blog, description_blog, url_img_blog, blogs.created_at, blogs.update_at, users.name_user ";
+            $sql .= "FROM blogs ";
+            $sql .= "INNER JOIN users ";
+            $sql .= "ON blogs.user_id = users.id_user ";
+            $sql .= "WHERE id_blog = $this->id";
+            $result = $this->db->query($sql);
+            $result_query = $result->fetch();
+
+            $this->db = null;
+        } catch (Exception $e) {
+            echo 'Error ' . $e->getMessage();
+        }
+
+        return $result_query;
+    }
 }
