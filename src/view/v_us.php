@@ -4,7 +4,7 @@ include_once('templates/header.php');
 ?>
 
 <main class="container">
-    <h1 class="text-center fw-300">Conoce Sobre Nosotros</h1>
+    <h2 class="text-center fw-300">Conoce Sobre Nosotros</h2>
 
     <div class="us-container">
         <div class="us-img">

@@ -9,7 +9,7 @@ include_once('templates/header.php');
         <a href="anuncios/" class="btn btn-green">Regresar</a>
     </div>
 
-    <h1 class="fw-300 text-center"><?php echo $detail_house['title_house']; ?></h1>
+    <h2 class="fw-300 text-center"><?php echo $detail_house['title_house']; ?></h2>
 
     <img src="public/img/<?php echo $detail_house['url_img_house']; ?>" alt="Anuncio <?php echo $detail_house['title_house']; ?>">
 

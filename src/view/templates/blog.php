@@ -1,5 +1,5 @@
 <section class="blog">
-    <h3 class="fw-300 text-center">Nuestro Blog</h3>
+    <h2 class="fw-300 text-center">Nuestro Blog</h2>
 
     <?php foreach ($array_blog as $blog) : ?>
         <article class="blog-post">
