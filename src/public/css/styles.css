@@ -370,35 +370,22 @@ h4 {
     padding: 1rem 0 3rem 0;
 }
 
-/* detail ad */
+/* detail ad & blog */
+.container-detail {
+    padding-bottom: 1rem;
+}
+
+.container-detail h1 {
+    margin-top: 1rem;
+}
+
 .btn-return {
     display: flex;
     justify-content: flex-start;
-}
-
-.btn-return h1 {
-    margin: 0;
-}
-
-.ad-img-background {
-    background-color: #f5f5f5;
-    padding-top: 0.1rem;
-    padding-bottom: 3rem;
-
-}
-
-.ad-img-background h1 {
-    margin-top: 0;
 }
 
 .ad-resume {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* detail blog */
-.container-detail {
-    padding-top: 0.1rem;
-    padding-bottom: 3rem;
 }
