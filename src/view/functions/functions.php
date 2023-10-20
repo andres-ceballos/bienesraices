@@ -25,6 +25,8 @@ function friendlyURL($view)
         $controller_file = 'controller/c_house';
     } else if ($view[0] == 'blog') {
         $controller_file = 'controller/c_blog';
+    } else if ($view[0] == 'contacto') {
+        $controller_file = 'controller/c_contact';
     }
 
     return $controller_file;
