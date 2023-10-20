@@ -26,8 +26,6 @@
     // echo "<pre>";
     ?>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="public/js/ajax.js"></script>
 </body>
 
 </html>
