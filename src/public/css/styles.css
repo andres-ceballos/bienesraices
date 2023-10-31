@@ -17,7 +17,7 @@ body {
     line-height: 2;
 }
 
-/* Globals */
+/* GLOBALS */
 
 img {
     max-width: 100%;
@@ -45,7 +45,7 @@ h4 {
     font-size: 2.6rem;
 }
 
-/* Utilies */
+/* UTILITIES */
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -67,7 +67,7 @@ h4 {
     max-width: 80rem;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn {
     color: #ffffff;
@@ -96,7 +96,7 @@ h4 {
     background-color: #71b100;
 }
 
-/* Header */
+/* HEADER */
 .site-header.main {
     background-image: url(../img/header.jpg);
     background-position: center center;
@@ -127,7 +127,7 @@ h4 {
     padding-top: 3rem;
 }
 
-/* Navigation */
+/* NAV */
 
 .mobile-menu {
     display: none;
@@ -157,7 +157,7 @@ h4 {
     color: #71b100;
 }
 
-/* Us Icons*/
+/* US ICON */
 
 .us-icon {
     display: flex;
@@ -173,7 +173,7 @@ h4 {
     text-transform: uppercase;
 }
 
-/* Ads */
+/* ADS */
 .ads-container {
     display: flex;
     justify-content: space-between;
@@ -223,7 +223,7 @@ h4 {
     justify-content: flex-end;
 }
 
-/* Home Contact */
+/* HOME CONTACT */
 
 .img-contact {
     background-image: url(../img/encuentra.jpg);
@@ -243,7 +243,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-/* Lower Section */
+/* LOWER SECTION */
 .lower-section {
     display: flex;
     justify-content: space-between;
@@ -298,7 +298,7 @@ h4 {
     color: #e08709;
 }
 
-/* Reviews */
+/* REVIEWS */
 
 .review blockquote {
     position: relative;
@@ -329,7 +329,7 @@ h4 {
     text-align: right;
 }
 
-/* Footer */
+/* FOOTER */
 .footer-site {
     background-color: #333333;
     margin: 0;
@@ -370,7 +370,7 @@ h4 {
     padding: 1rem 0 3rem 0;
 }
 
-/* detail ad & blog */
+/* DETAIL AD & BLOG */
 .container-detail {
     padding-bottom: 1rem;
 }
@@ -390,7 +390,7 @@ h4 {
     align-items: center;
 }
 
-/* contact page */
+/* CONTACT PAGE */
 .contact p {
     font-size: 1.4rem;
     color: #333333;
@@ -408,7 +408,9 @@ label {
     display: block;
 }
 
-input:not([type="submit"]), textarea, select {
+input:not([type="submit"]),
+textarea,
+select {
     padding: 1rem;
     display: block;
     width: 100%;
@@ -437,4 +439,13 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* SWEETALERT */
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
+
+.swal2-html-container {
+    font-weight: 300 !important;
 }

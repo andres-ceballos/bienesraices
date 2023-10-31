@@ -3,7 +3,6 @@ require_once('db/db_connection.php');
 
 class Review
 {
-
     private $db;
     private $id;
     private $user_id;
