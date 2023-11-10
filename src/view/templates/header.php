@@ -7,16 +7,14 @@ if (urlCurrent() == '/') :
         <?php endif; ?>
         <div class="container header-content">
             <div class="bar">
-                <a href="/">
+                <a class="logo" href="/">
                     <img src="public/img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
-                <div class="mobile-menu">
-                    <a href="#navigation">
-                        <img src="public/img/barras.svg" alt="Icono menu">
-                    </a>
-                </div>
-
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-button-container">
+                    <div class="menu-button"></div>
+                </label>
                 <?php
                 include('navigation.php');
                 ?>
