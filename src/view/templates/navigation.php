@@ -1,4 +1,3 @@
-
 <nav id="nav" class="nav menu">
     <a href="nosotros/">Nosotros</a>
     <a href="anuncios/">Anuncios</a>

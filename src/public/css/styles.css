@@ -201,9 +201,9 @@ h4 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu > a {
+}
+
+.menu>a {
     margin: 0 1rem;
     overflow: hidden;
     width: 100%;
@@ -211,13 +211,18 @@ h4 {
     text-decoration: none;
     font-size: 2.2rem;
     display: block;
-  }
+}
 
-  @media (min-width: 40rem) {
+@media (min-width: 40rem) {
     .menu a {
         display: inline-block;
         font-size: 1.8rem;
         margin-right: 2rem;
+    }
+
+    .menu>a {
+        width: auto;
+        overflow: unset;
     }
 
     .menu a:last-of-type {
