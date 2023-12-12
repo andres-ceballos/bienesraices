@@ -1,4 +1,5 @@
 <?php
+require_once('view/functions/routes.php');
 require_once('view/functions/functions.php');
 require_once('model/m_main.php');
 
