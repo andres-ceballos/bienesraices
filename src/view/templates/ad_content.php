@@ -3,41 +3,41 @@
 
     <div class="ads-container">
         <?php
-        foreach ($array_house as $house) : ?>
+        foreach ($array_ad as $ad) : ?>
             <div class="ad">
-                <img src="public/img/<?php echo $house['url_img_house']; ?>" alt="Anuncio">
+                <img src="public/img/<?php echo $ad['url_img_ad']; ?>" alt="Anuncio <?php echo $ad['title_ad']; ?>">
                 <div class="ad-content">
                     <h3>
-                        <?php echo $house['title_house']; ?>
+                        <?php echo $ad['title_ad']; ?>
                     </h3>
                     <p>
-                        <?php echo $house['description_house']; ?>
+                        <?php echo $ad['description_ad']; ?>
                     </p>
                     <p class="price">$
-                        <?php echo formatMoneyNumber($house['price_house']); ?>
+                        <?php echo formatMoneyNumber($ad['price_ad']); ?>
                     </p>
                     <ul class="characteristics-icon">
                         <li>
                             <img src="public/img/icono_dormitorio.svg" alt="Icono">
                             <p>
-                                <?php echo $house['cant_bedroom_house']; ?>
+                                <?php echo $ad['cant_bedroom_ad']; ?>
                             </p>
                         </li>
                         <li>
                             <img src="public/img/icono_wc.svg" alt="Icono">
                             <p>
-                                <?php echo $house['cant_bathroom_house']; ?>
+                                <?php echo $ad['cant_bathroom_ad']; ?>
                             </p>
                         </li>
                         <li>
                             <img src="public/img/icono_estacionamiento.svg" alt="Icono">
                             <p>
-                                <?php echo $house['cant_parking_house']; ?>
+                                <?php echo $ad['cant_parking_ad']; ?>
                             </p>
                         </li>
                     </ul>
 
-                    <a href="anuncios/detalle/<?php echo $house['id_house']; ?>" class="btn btn-yellow d-block">Ver Propiedad</a>
+                    <a href="anuncios/detalle/<?php echo $ad['id_ad']; ?>" class="btn btn-yellow d-block">Ver Propiedad</a>
                 </div>
 
             </div>

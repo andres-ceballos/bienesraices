@@ -9,36 +9,36 @@ include_once('templates/header.php');
         <a href="anuncios/" class="btn btn-green">Regresar</a>
     </div>
 
-    <h2 class="fw-300 text-center"><?php echo $detail_house['title_house']; ?></h2>
+    <h2 class="fw-300 text-center"><?php echo $detail_ad['title_ad']; ?></h2>
 
-    <img src="public/img/<?php echo $detail_house['url_img_house']; ?>" alt="Anuncio <?php echo $detail_house['title_house']; ?>">
+    <img src="public/img/<?php echo $detail_ad['url_img_ad']; ?>" alt="Anuncio <?php echo $detail_ad['title_ad']; ?>">
 
     <div class="ad-resume">
-        <p class="price">$ <?php echo formatMoneyNumber($detail_house['price_house']); ?></p>
+        <p class="price">$ <?php echo formatMoneyNumber($detail_ad['price_ad']); ?></p>
         <ul class="characteristics-icon">
             <li>
                 <img src="public/img/icono_dormitorio.svg" alt="Icono">
                 <p>
-                    <?php echo $detail_house['cant_bedroom_house']; ?>
+                    <?php echo $detail_ad['cant_bedroom_ad']; ?>
                 </p>
             </li>
             <li>
                 <img src="public/img/icono_wc.svg" alt="Icono">
                 <p>
-                    <?php echo $detail_house['cant_bathroom_house']; ?>
+                    <?php echo $detail_ad['cant_bathroom_ad']; ?>
                 </p>
             </li>
             <li>
                 <img src="public/img/icono_estacionamiento.svg" alt="Icono">
                 <p>
-                    <?php echo $detail_house['cant_parking_house']; ?>
+                    <?php echo $detail_ad['cant_parking_ad']; ?>
                 </p>
             </li>
         </ul>
     </div>
 
     <p>
-        <?php echo $detail_house['description_house']; ?>
+        <?php echo $detail_ad['description_ad']; ?>
     </p>
 </section>
 

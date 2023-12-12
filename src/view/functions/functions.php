@@ -22,7 +22,7 @@ function friendlyURL($view)
     if ($view[0] == 'nosotros') {
         $controller_file = 'controller/c_us';
     } else if ($view[0] == 'anuncios') {
-        $controller_file = 'controller/c_house';
+        $controller_file = 'controller/c_ad';
     } else if ($view[0] == 'blog') {
         $controller_file = 'controller/c_blog';
     } else if ($view[0] == 'contacto') {

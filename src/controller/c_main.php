@@ -21,7 +21,7 @@ if (isset($_GET['view'])) {
 } else {
 
     //CALL ADS HOUSES, BLOGS AND REVIEWS VIEW/V_MAIN
-    $array_house = $Main->houses;
+    $array_ad = $Main->ads;
     $array_blog = $Main->blogs;
     $array_review = $Main->reviews;
     require_once('view/v_main.php');

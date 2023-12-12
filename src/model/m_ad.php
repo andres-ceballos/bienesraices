@@ -1,7 +1,7 @@
 <?php
 require_once('db/db_connection.php');
 
-class House
+class Ad
 {
     private $db;
     public $id;
@@ -220,10 +220,10 @@ class House
         return $this;
     }
 
-    public function getHousesMain()
+    public function getAdsMain()
     {
         try {
-            $sql = "SELECT * FROM houses ORDER BY id_house DESC LIMIT 3";
+            $sql = "SELECT * FROM ads ORDER BY id_ad DESC LIMIT 3";
             $result = $this->db->query($sql);
             $this->db = null;
         } catch (Exception $e) {
@@ -233,10 +233,10 @@ class House
         return $result;
     }
 
-    public function getHouses()
+    public function getAds()
     {
         try {
-            $sql = "SELECT * FROM houses ORDER BY id_house DESC";
+            $sql = "SELECT * FROM ads ORDER BY id_ad DESC";
             $result = $this->db->query($sql);
             $this->db = null;
         } catch (Exception $e) {
@@ -246,7 +246,7 @@ class House
         return $result;
     }
 
-    public function getDetailHouse()
+    public function getDetailAd()
     {
 
         // if (!$this->db) {
@@ -254,7 +254,7 @@ class House
         // }
 
         try {
-            $sql = "SELECT * FROM houses WHERE id_house = $this->id";
+            $sql = "SELECT * FROM ads WHERE id_ad = $this->id";
             $result = $this->db->query($sql);
             $result_query = $result->fetch();
 
