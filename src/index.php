@@ -10,6 +10,8 @@
     <!-- Compatibility view -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bienes Raíces</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="public/img/casa.png">
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <!-- CSS Styles -->
