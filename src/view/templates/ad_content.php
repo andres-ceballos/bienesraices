@@ -7,10 +7,10 @@
             <div class="ad">
                 <img src="public/img/<?php echo $ad['url_img_ad']; ?>" alt="Anuncio <?php echo $ad['title_ad']; ?>">
                 <div class="ad-content">
-                    <h3>
+                    <h3 class="ellipsis-1">
                         <?php echo $ad['title_ad']; ?>
                     </h3>
-                    <p>
+                    <p class="ellipsis-3">
                         <?php echo $ad['description_ad']; ?>
                     </p>
                     <p class="price">$

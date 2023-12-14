@@ -7,10 +7,10 @@ include_once('templates/ad_content.php');
 <section class="img-contact">
     <div class="container contact-content">
         <h2>Encuentra la casa de tus sueños</h2>
-        <p>
+        <p class="ellipsis-2">
             Nemo at fugiat vitae voluptatibus, cum eius eveniet adipisci assumenda totam ab laudantium consequuntur saepe tenetur, quibusdam in eligendi dicta officiis suscipit!
         </p>
-        <a href="contact/" class="btn btn-yellow">Contáctanos</a>
+        <a href="contacto/" class="btn btn-yellow">Contáctanos</a>
     </div>
 </section>
 

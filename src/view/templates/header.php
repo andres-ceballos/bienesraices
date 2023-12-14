@@ -7,14 +7,20 @@ if (urlCurrent() == '/') :
         <?php endif; ?>
         <div class="container header-content">
             <div class="bar">
-                <a class="logo" href="/">
-                    <img src="public/img/logo.svg" alt="Logotipo de Bienes Raices">
+                <!-- <a class="logo-link" href="/">
+                    <img class="logo-img" src="public/img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a> -->
+
+                <a class="logo-header" href="/">
+                    <span class="title-logo-header">Bienes<span class="fw-700">Raices</span></span>
                 </a>
 
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-button-container">
-                    <div class="menu-button"></div>
-                </label>
+                <button class="panel-btn hamburger hamburger--spring" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
                 <?php
                 include('navigation.php');
                 ?>
@@ -26,3 +32,6 @@ if (urlCurrent() == '/') :
 
         </div>
         </header>
+
+        <div class="page-container">
+            <div class="content-wrap">
