@@ -1,0 +1,50 @@
+version: '3.9'
+
+networks:
+  bienesraices_net:
+    driver: bridge
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_br
+    restart: unless-stopped
+    environment: 
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: bienesraices
+      TZ: America/Bogota
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-time-zone=-05:00']
+    ports: 
+      - 3306:3306
+    volumes: 
+      - ./mysql:/var/lib/mysql
+    networks: 
+      - bienesraices_net
+
+  phpmyadmin:
+    image: phpmyadmin:5.0
+    container_name: phpmyadmin_br
+    restart: unless-stopped
+    environment: 
+      PMA_HOST: mysql
+    ports: 
+      - 8080:80
+    depends_on: 
+      - mysql
+    networks: 
+      - bienesraices_net
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_br
+    volumes: 
+      - ./src:/var/www/html
+    environment:
+      - ALLOW_OVERRIDE=true
+    ports:
+      - 8000:80
+    networks: 
+      - bienesraices_net
