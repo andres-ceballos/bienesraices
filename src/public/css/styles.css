@@ -346,9 +346,9 @@ h4 {
     }
 }
 
-/* US ICON */
+/* ABOUT ICON */
 @media (min-width: 40rem) {
-    .us-icon {
+    .about-icon {
         display: flex;
         justify-content: space-between;
     }
@@ -571,21 +571,21 @@ h4 {
     color: var(--whiteColorFFF);
 }
 
-/* US PAGE */
+/* ABOUT PAGE */
 .site-header {
     background-color: var(--grayColor333);
     padding: 1rem 0 3rem 0;
 }
 
 @media (min-width: 40rem) {
-    .us-container {
+    .about-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
     }
 }
 
-.us-text blockquote {
+.about-text blockquote {
     font-weight: 900;
     font-size: 2rem;
     margin: 0;
@@ -593,7 +593,23 @@ h4 {
 }
 
 @media (min-width: 40rem) {
-    .us-text blockquote {
+    .about-text blockquote {
         padding: 0 0 1rem 0;
+    }
+}
+
+/* DETAIL AD & BLOG */
+.container-detail {
+    padding-bottom: 1rem;
+}
+
+.btn-return a {
+    display: block;
+    max-width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .btn-return a {
+        max-width: 25%;
     }
 }

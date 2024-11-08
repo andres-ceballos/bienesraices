@@ -5,12 +5,12 @@ include_once('templates/header.php');
 <main class="container">
     <h2 class="text-center fw-300">Conoce Sobre Nosotros</h2>
 
-    <div class="us-container">
-        <div class="us-img">
+    <div class="about-container">
+        <div class="about-img">
             <img src="public/img/nosotros.jpg" alt="Imagen Nosotros">
         </div>
 
-        <div class="us-text">
+        <div class="about-text">
             <blockquote>25 Años de Experiencia</blockquote>
             <p>
                 Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc

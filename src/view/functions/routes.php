@@ -17,7 +17,11 @@ function viewURLToController($view)
             return $controller_file;
             break;
         case 'blog':
-            $controller_file = 'controller/c_blog.php';
+            if ($view[1] == 'detalle') {
+                $controller_file = 'controller/c_detail_blog.php';
+            } else {
+                $controller_file = 'controller/c_blog.php';
+            }            
             return $controller_file;
             break;
         case 'contacto':

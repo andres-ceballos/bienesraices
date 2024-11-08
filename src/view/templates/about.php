@@ -1,7 +1,7 @@
 <section class="container section">
     <h2 class="fw-300 text-center">Más Sobre Nosotros</h2>
 
-    <div class="us-icon">
+    <div class="about-icon">
         <div class="icon">
             <img src="public/img/icono1.svg" alt="Icono Seguridad">
             <h3>Seguridad</h3>
