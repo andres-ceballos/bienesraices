@@ -621,3 +621,69 @@ h4 {
         align-items: center;
     }
 }
+
+/* CONTACT PAGE */
+.contact p {
+    font-size: 1.4rem;
+    color: var(--grayColor333);
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: var(--grayColor333);
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: var(--grayColorE1E);
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.contact-form {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SWEETALERT */
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
+
+.swal2-html-container {
+    font-weight: 300 !important;
+}

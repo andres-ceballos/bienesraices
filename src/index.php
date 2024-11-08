@@ -28,7 +28,9 @@
     // var_dump();
     // echo "<pre>";
     ?>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="public/js/app.js"></script>
+    <script src="public/js/ajax.js"></script>
 </body>
 
 </html>
