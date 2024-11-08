@@ -1,17 +1,28 @@
 <?php
 
-//REDIRECT FRIENDLY URL NAME TO FILES .PHP C_MAIN
+//REDIRECT TO CONTROLLER .PHP FILES
 function viewURLToController($view)
 {
-    if ($view[0] == 'nosotros') {
-        $controller_file = 'controller/c_about.php';
-    } else if ($view[0] == 'anuncios') {
-        $controller_file = 'controller/c_ad.php';
-    } else if ($view[0] == 'blog') {
-        $controller_file = 'controller/c_blog.php';
-    } else if ($view[0] == 'contacto') {
-        $controller_file = 'controller/c_contact.php';
+    switch ($view[0]) {
+        case 'nosotros':
+            $controller_file = 'controller/c_about.php';
+            return $controller_file;
+            break;
+        case 'anuncios':
+            if ($view[1] == 'detalle') {
+                $controller_file = 'controller/c_ad_detail.php';
+            } else {
+                $controller_file = 'controller/c_ad.php';
+            }
+            return $controller_file;
+            break;
+        case 'blog':
+            $controller_file = 'controller/c_blog.php';
+            return $controller_file;
+            break;
+        case 'contacto':
+            $controller_file = 'controller/c_contact.php';
+            return $controller_file;
+            break;
     }
-
-    return $controller_file;
 }

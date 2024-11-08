@@ -1,3 +1,4 @@
+<?php ob_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +28,6 @@
     // var_dump();
     // echo "<pre>";
     ?>
-
     <script src="public/js/app.js"></script>
 </body>
 

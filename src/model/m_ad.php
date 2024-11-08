@@ -4,7 +4,6 @@ require_once('db/db_connection.php');
 
 class Ad
 {
-
     private $db;
     public $id;
     public $title;
@@ -233,5 +232,38 @@ class Ad
         }
 
         return $result;
+    }
+
+    public function getAds()
+    {
+        try {
+            $sql = "SELECT * FROM ads ORDER BY id_ad DESC";
+            $result = $this->db->query($sql);
+            $this->db = null;
+        } catch (Exception $e) {
+            echo 'Error ' . $e->getMessage();
+        }
+
+        return $result;
+    }
+
+    public function getDetailAd()
+    {
+
+        // if (!$this->db) {
+        //     die('ERR -> No hay conexión con la BD');
+        // }
+
+        try {
+            $sql = "SELECT * FROM ads WHERE id_ad = $this->id";
+            $result = $this->db->query($sql);
+            $result_query = $result->fetch();
+
+            $this->db = null;
+        } catch (Exception $e) {
+            echo 'Error ' . $e->getMessage();
+        }
+
+        return $result_query;
     }
 }

@@ -44,7 +44,9 @@
         <?php endforeach; ?>
     </div>
 
+    <?php if (urlCurrent() == '/') : ?>
         <div class="all-ads">
             <a href="anuncios/" class="btn btn-green">Ver Todas</a>
         </div>
+    <?php endif; ?>
 </main>
