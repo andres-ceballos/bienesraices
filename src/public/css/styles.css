@@ -613,3 +613,11 @@ h4 {
         max-width: 25%;
     }
 }
+
+@media (min-width: 40rem) {
+    .ad-resume {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
